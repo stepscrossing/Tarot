@@ -1,0 +1,36 @@
+{
+  "name": "mystic-tarot",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "dev:server": "node server/index.js",
+    "dev:full": "concurrently -k \"npm run dev\" \"npm run dev:server\"",
+    "build": "vite build",
+    "lint": "tsc --noEmit",
+    "preview": "vite preview",
+    "start": "node server/index.js"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.57.4",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^5.1.0",
+    "framer-motion": "^12.34.0",
+    "lucide-react": "^0.563.0",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "react-router-dom": "^7.13.0",
+    "zhipuai": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.19.15",
+    "@vitejs/plugin-react": "^5.1.4",
+    "concurrently": "^9.2.1",
+    "typescript": "~5.8.2",
+    "vite": "^6.4.1"
+  }
+}
